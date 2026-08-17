@@ -1,0 +1,133 @@
+{
+  "syncedAt": "2026-08-17T06:50:09.443Z",
+  "articles": [
+    {
+      "title": "通过VPS中转与链式节点绕过GPT封禁与GFW阻断实践",
+      "date": "2025-05-12",
+      "excerpt": "背景介绍 最近，一位网友因为 ChatGPT Plus 订阅费用高昂而尝试了账号共享。他自己购买了OpenAI的付费账号（ChatGPT Plus每月约20美元，折合人民币135元左右 ￼），并将该账号提供给身边的网友共同试用，以分摊成本。然而，共享账号带来了新的问题：OpenAI对账号登陆的风控。据公开资…",
+      "path": "linked-proxy.md",
+      "sha": "6816e36435e0aeccc7e580f5a115738dae8bcf1e",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/linked-proxy.md"
+    },
+    {
+      "title": "Weclone 尝试",
+      "date": "2025-04-14",
+      "excerpt": "Weclone 尝试 背景 最近有朋友发给我一个项目叫 WeClone)，这是一个能够克隆用户聊天风格的AI工具。从小红书上看到的内容来看，这个项目能够分析并模仿用户的聊天习惯和表达方式，实现个性化的聊天风格复制。小红书上有不少用户分享了使用体验，称其能够精准捕捉个人语言特点，让AI聊天更加自然和个性化。…",
+      "path": "weclone.md",
+      "sha": "3fc1316c64c6a5186cf336a35791875f90601e55",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/weclone.md"
+    },
+    {
+      "title": "博客内容迁移Git",
+      "date": "2024-11-28",
+      "excerpt": "博客内容迁移git 背景 鉴于我现在的博客内容和博客项目绑定死，每次更新博客内容，还需要进行npm run build，重新部署静态页面，比较费时 操作 1. .md 文件迁移私有GitHub仓库 2. 博客静态页面通过 GitHub API 枚举文章列表 1. 通过 Get请求直接获取文章内容 结果 之后…",
+      "path": "blog-git.md",
+      "sha": "366f32436691f375cea8c163ddcde0ae35b888a1",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/blog-git.md"
+    },
+    {
+      "title": "News Fetcher 设计",
+      "date": "2024-11-28",
+      "excerpt": "News Fetcher 背景 每天我都会阅读 美联社: 路透社: 加密货币相关新闻: 花费的时间较多，长达30-40min，希望把这个过程精简为5-10min，并且可以在做其他事的时候做这件事情。 方案 因此我决定通过Firecrawl API fetch网站内容（可以指定层级，可能设置为1），接着用GP…",
+      "path": "News-Fetcher.md",
+      "sha": "f6c8d24a28d252ccb4f0d94c3ce58853977d86ed",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/News-Fetcher.md"
+    },
+    {
+      "title": "文本绘图探索",
+      "date": "2024-11-19",
+      "excerpt": "概要 将会探索类图、时序图最简单的方案。 PlantUML PlantUML 编辑器 Mermaid 结论 Mermaid 总体来看比较轻量级，语言类似 Markdown，出图效果更符合设计审美。因此以后将优先选择 Mermaid。",
+      "path": "UMLS.md",
+      "sha": "639ee0d6c8ea9e21d7538d7f637e1edfe889e00e",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/UMLS.md"
+    },
+    {
+      "title": "后台系统对照片的处理～",
+      "date": "2024-11-07",
+      "excerpt": "背景 在后台系统中，图片的存储和管理是一个重要的功能，但随着时间的推移，可能会产生大量冗余照片。这些照片可能由于用户删除了相关内容或不再被使用，导致存储空间浪费。因此，设计一个高效的照片冗余管理和清理机制显得尤为重要。 为了解决这一问题，我们可以通过引用计数的方式，判断图片是否仍被使用，并结合多种清理策略，…",
+      "path": "Pics.md",
+      "sha": "2df3e18aa1b920beec34c06c80c5fbd147f7badf",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/Pics.md"
+    },
+    {
+      "title": "Paster -- 对象存储剪贴板",
+      "date": "2024-10-23",
+      "excerpt": "Paster 什么是 Paster？ 近期在 Hacker News 上面发现的一款匿名、免费的存储文字、图片、视频的网络应用 。通过这个链接，可以再次访问用户上传的资源。当然，有 180 天的存储限制，以及 50M 的大小限制。 二次开发 我根据作者提供的功能，二次开发了一个用户友好的 UI 页面 Pas…",
+      "path": "paster.md",
+      "sha": "fd227ff419f41dd49723f4958c3285b2d8c79289",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/paster.md"
+    },
+    {
+      "title": "做一个网站之前，需要提前考虑什么（用户体验、前端初始化构建）？",
+      "date": "2024-09-11",
+      "excerpt": "user experience 的五个步骤 设计过程可以分为五个关键步骤：共情、定义、构思、原型设计和测试。这些步骤帮助设计师从用户需求出发，逐步形成一个完整的设计方案。 1. 共情 共情是设计的第一步，重点是理解用户的需求和痛点。设计师通过访谈、问卷调查等方式，深入了解用户的使用场景，掌握他们的期望和挑战…",
+      "path": "ux_front_end.md",
+      "sha": "ed245411f4d24500afc7084e2af8c58bfc8f4a78",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/ux_front_end.md"
+    },
+    {
+      "title": "响应网页设计 & 跨平台设计",
+      "date": "2024-09-09",
+      "excerpt": "响应式网页设计（Responsive Web Design，简称RWD）是一种网页设计技术，旨在使网页能够根据用户设备的屏幕大小、分辨率和方向自动调整布局，从而在各种设备上（如手机、平板、笔记本和桌面电脑）提供最佳的用户体验。 核心概念： 1. 流式布局 （Fluid Grid）： 通过相对单位（如百分比或…",
+      "path": "rwd.md",
+      "sha": "e3c2be59f6195cee050eb98817a56aafcd8c4367",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/rwd.md"
+    },
+    {
+      "title": "Dora.ai 使用体验",
+      "date": "2024-09-06",
+      "excerpt": "Website Dora.ai 官网 Dora AI 是一个无需编码的 AI 网站生成工具，用户只需通过文本提示即可创建网站。它的主要特点包括生成 3D 动画、交互式设计以及无模板限制的自定义布局。Dora AI 支持从 Figma 等设计工具导入作品，并适合初学者和专业人士使用。平台目前提供免费版本，用户…",
+      "path": "Dora.md",
+      "sha": "c3b9816b145b00db4b389bdc313f3390a3e44ecd",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/Dora.md"
+    },
+    {
+      "title": "What Happened to Spotify翻译搬运",
+      "date": "2024-09-03",
+      "excerpt": "回声室、利润与自2017年以来艺术家发现的衰退 Rosie Hoggmascall 在 growthdives.com 免费阅读 🕺 时不时地，我会留意工作时背景中播放的音乐。我开始感到不满。 这些歌曲我已经听了成百上千遍。 我打开应用，点击暂停，然后尝试寻找其他音乐。 但很难找到我想听的东西。 所以我懒…",
+      "path": "Whats-happened-to-Spotify.md",
+      "sha": "58013a3fc40936733bec34f98d6d6b1bf2da1bba",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/Whats-happened-to-Spotify.md"
+    },
+    {
+      "title": "JWT的原理和思考",
+      "date": "2024-08-30",
+      "excerpt": "JWT 是啥？ JWT（JSON Web Token）是一种用于在各方之间作为 JSON 对象安全传输信息的开放标准（RFC 7519）。该信息可以被验证和信任，因为它是经过数字签名的。JWT 通常用于身份验证和信息交换。 JWT 由三部分组成，通常以点 (.) 分隔： 1. Header （头部）：描述签…",
+      "path": "JWT的原理和思考.md",
+      "sha": "2ba66486fb123e7a6f34ecfe5d6daed563410c57",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/JWT%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E6%80%9D%E8%80%83.md"
+    },
+    {
+      "title": "关于图床",
+      "date": "2024-08-29",
+      "excerpt": "什么是图床？ 图床 （Image Hosting Service）是指专门用于存储和管理图片的在线服务。用户可以将图片上传到图床，然后获取一个图片的外链 URL，这个 URL 可以嵌入到其他网页、博客、社交媒体、论坛等地方，用于展示图片而不需要将图片文件直接保存在这些平台上。 什么情况需要用图床？ 图床是专…",
+      "path": "关于图床.md",
+      "sha": "2780ccec754383c4c528c663f5e2575a6d35daf0",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/%E5%85%B3%E4%BA%8E%E5%9B%BE%E5%BA%8A.md"
+    },
+    {
+      "title": "IDEA破解",
+      "date": "2024-08-29",
+      "excerpt": "查看原文 1. 下载 IDEA 下载链接 2. 脚本 下载脚本：百度网盘链接 提取码: m494",
+      "path": "IDEA 破解.md",
+      "sha": "7886f617bc8b70bc4eb9d2d5a773813b6c9f8eea",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/IDEA%20%E7%A0%B4%E8%A7%A3.md"
+    },
+    {
+      "title": "VPS 服务器搭建 — ChatGPT中转站",
+      "date": "2024-08-29",
+      "excerpt": "在本教程中，我们将详细介绍如何在 VPS 服务器上搭建一个中转站，用于绕过网络限制访问 OpenAI 的 ChatGPT 服务。我们会一步步进行从购买服务器到配置域名、安装必要的软件和工具，以及最后的伪装配置，以确保你的服务器能够稳定且安全地运行。 购买一台云服务器(香港) 首先，我们需要购买一台位于香港的…",
+      "path": "vps.md",
+      "sha": "45dbbb4d83debc8e0b55b55480682a647e9a628a",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/vps.md"
+    },
+    {
+      "title": "Why Blogs",
+      "date": "2024-08-29",
+      "excerpt": "为什么我要搭建个人博客 作为一名刚毕业两年的程序员，我觉得有一个个人博客是个不错的主意。首先，这是我在数字世界里展示自己的方式之一。要在这个信息泛滥的时代脱颖而出，让别人迅速了解你，一个博客链接无疑是最快捷的途径。它可以是我的线上名片，不论是求职还是与同行交流，丢个链接过去，别人就能一览我的想法和技术积累。…",
+      "path": "why-blogs.md",
+      "sha": "a953a4259d2c1654fbd6a570acebe68feb62ce79",
+      "sourceUrl": "https://github.com/nagisa77/blogs/blob/master/why-blogs.md"
+    }
+  ]
+}
