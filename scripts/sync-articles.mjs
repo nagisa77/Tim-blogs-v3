@@ -1,5 +1,5 @@
 import { execFileSync } from "node:child_process";
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 
 const repository = "nagisa77/blogs";
@@ -46,6 +46,15 @@ try {
   const articles = entries
     .map(parseArticle)
     .sort((a, b) => (b.date || "0000").localeCompare(a.date || "0000") || a.title.localeCompare(b.title, "zh-CN"));
+
+  if (existsSync(output)) {
+    const current = JSON.parse(readFileSync(output, "utf8"));
+    if (JSON.stringify(current.articles) === JSON.stringify(articles)) {
+      console.log(`Articles unchanged (${articles.length}) in ${repository}.`);
+      process.exit(0);
+    }
+  }
+
   mkdirSync(dirname(output), { recursive: true });
   writeFileSync(output, `${JSON.stringify({ syncedAt: new Date().toISOString(), articles }, null, 2)}\n`);
   console.log(`Synced ${articles.length} articles from ${repository}.`);
